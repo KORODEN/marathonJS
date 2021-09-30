@@ -1,3 +1,8 @@
+@font-face {
+  font-family: 'Montserrat-Regular';
+  src: url('Montserrat-Regular.ttf');
+}
+
 * {
   box-sizing: border-box;
 }
@@ -7,9 +12,11 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
   height: 100vh;
   overflow: hidden;
   margin: 0;
+  font-family: 'Montserrat-Regular';
 }
 
 .container {
@@ -31,4 +38,38 @@ body {
 
 .square:hover {
   transition-duration: 0s;
+}
+
+.amount {
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.amount label {
+  display: block;
+  margin-bottom: 5px;
+  color: #fff;
+}
+
+.amount input {
+  border-radius: 5px;
+  border: none;
+  padding: 3px 5px;
+}
+
+.amount input[type = "number"] {
+  width: 170px;
+}
+
+.amount input[type = "submit"] {
+  padding: 3px 15px;
+  cursor: pointer;
+}
+
+.amount input:hover {
+  box-shadow: 0 0 8px #72b8c9;
+}
+
+.amount input:focus {
+  outline: none;
 }
