@@ -16,7 +16,7 @@ input.addEventListener('change', () => {
 
 function start() {
     if(!isStarted) {
-        board.innerHTML = nul
+        board.innerHTML = null
         let SQUARES_NUMBER = input.value
 
         if(SQUARES_NUMBER > 700){
